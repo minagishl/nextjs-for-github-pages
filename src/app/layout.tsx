@@ -6,35 +6,35 @@ const NotoSansJP = Noto_Sans_JP({ subsets: ['latin'], variable: '--font-noto-san
 import './globals.css';
 
 export const metadata: Metadata = {
-	title: APP_NAME,
-	description: APP_DESCRIPTION,
-	openGraph: {
-		title: APP_NAME,
-		description: APP_DESCRIPTION,
-		type: 'website',
-		locale: 'ja_JP',
-		url: 'https://example.com',
-		siteName: APP_NAME,
-	},
-	twitter: {
-		card: 'summary',
-		title: APP_NAME,
-		description: APP_DESCRIPTION,
-		creator: CREATOR,
-	},
-	verification: {
-		google: GOOGLE_VERIFICATION,
-	},
+  title: APP_NAME,
+  description: APP_DESCRIPTION,
+  openGraph: {
+    title: APP_NAME,
+    description: APP_DESCRIPTION,
+    type: 'website',
+    locale: 'ja_JP',
+    url: 'https://example.com',
+    siteName: APP_NAME,
+  },
+  twitter: {
+    card: 'summary',
+    title: APP_NAME,
+    description: APP_DESCRIPTION,
+    creator: CREATOR,
+  },
+  verification: {
+    google: GOOGLE_VERIFICATION,
+  },
 };
 
 export default function RootLayout({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-	return (
-		<html lang='ja'>
-			<body className={`${NotoSansJP.className} ${NotoSansJP.variable}`}>{children}</body>
-		</html>
-	);
+  return (
+    <html lang="ja">
+      <body className={`${NotoSansJP.className} ${NotoSansJP.variable}`}>{children}</body>
+    </html>
+  );
 }
